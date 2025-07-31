@@ -193,6 +193,7 @@
   /* mobile styles */
   .panel {
     visibility: hidden;
+    display: none;
   }
   .link {
     scale: 0.7;

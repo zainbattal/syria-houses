@@ -4,8 +4,17 @@ const pool = require("./db");
 
 const app = express();
 
+const corsOptions = {
+  origin: [
+    "https://syria-opinions.vercel.app", // Your Vercel frontend
+    "http://localhost:3000", // For local development
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+};
+
 // Middleware
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 
 // Routes

@@ -17,16 +17,19 @@ export default function Uploud_page() {
     setMessage(null);
 
     try {
-      const response = await fetch("http://localhost:3000/insert", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          opinion: opinion.trim(),
-          city,
-        }),
-      });
+      const response = await fetch(
+        "https://syria-opinions.onrender.com/insert",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            opinion: opinion.trim(),
+            city,
+          }),
+        }
+      );
 
       const result = await response.json();
       if (response.ok) {

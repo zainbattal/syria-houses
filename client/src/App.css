@@ -189,3 +189,9 @@
 .link:hover {
   opacity: 0.7;
 }
+@media (max-width: 767px) {
+  /* mobile styles */
+  .panel {
+    visibility: hidden;
+  }
+}

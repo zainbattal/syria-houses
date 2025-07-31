@@ -4,7 +4,7 @@ function OpinionsList() {
   const [opinions, setOpinions] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/")
+    fetch("https://syria-opinions.onrender.com")
       .then((res) => res.json())
       .then((data) => setOpinions(data));
   }, []);

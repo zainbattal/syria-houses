@@ -35,7 +35,7 @@ const styles = {
     boxSizing: "border-box",
   },
   card: {
-    width: "100%",
+    width: "auto",
     backgroundColor: "#fff",
     borderRadius: "8px",
     marginBottom: "16px",

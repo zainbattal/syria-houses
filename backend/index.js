@@ -37,7 +37,7 @@ app.post("/insert", async (req, res) => {
     }
 
     const newOpinion = await pool.query(
-      "INSERT INTO opinions (opinion, city) VALUES ($1, $2) RETURNING *",
+      "INSERT INTO opinions (opinion, city, date) VALUES ($1, $2, CURRENT_DATE) RETURNING *",
       [opinion, city]
     );
 

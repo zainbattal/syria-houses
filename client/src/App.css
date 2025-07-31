@@ -194,4 +194,7 @@
   .panel {
     visibility: hidden;
   }
+  .link {
+    scale: 0.7;
+  }
 }

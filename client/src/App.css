@@ -162,7 +162,6 @@
   .product {
     flex-direction: column;
     text-align: center;
-    padding: 25px;
   }
 
   .product-img {
@@ -173,7 +172,6 @@
   }
 
   .product-action {
-    margin: 15px auto 0;
     width: 80%;
   }
 }
